@@ -3,12 +3,14 @@
   flex-flow: row wrap;
   overflow: auto;
   justify-content: center;
+  align-items:center;
 }
 .outer-wrapper .inner-wrapper {
   flex: none;
   flex-direction: column;
   display: flex;
   justify-content: space-between;
+  align-items:center;
   width: 20%;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -38,5 +40,6 @@
   .outer-wrapper .inner-wrapper {
     width: 90%;
     margin: 0 auto;
+    margin-bottom:1rem;
   }
 }
