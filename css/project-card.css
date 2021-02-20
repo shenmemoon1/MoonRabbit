@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   overflow: auto;
   justify-content: center;
-  align-items:center;
+/*   align-items:center; */
 }
 .outer-wrapper .inner-wrapper {
   flex: none;
