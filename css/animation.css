@@ -1,5 +1,41 @@
 /* box的动画 */
 
+@-webkit-keyframes turn{
+    /* form{
+        transform: rotateX(0deg) rotateY(45deg);
+    } */
+    to{
+        -webkit-transform:perspective(900px) rotateX(-45deg) rotateY(360deg);
+        transform:perspective(900px) rotateX(-45deg) rotateY(360deg);
+    }
+}
+@-moz-keyframes turn{
+    /* form{
+        transform: rotateX(0deg) rotateY(45deg);
+    } */
+    to{
+        -webkit-transform:perspective(900px) rotateX(-45deg) rotateY(360deg);
+        transform:perspective(900px) rotateX(-45deg) rotateY(360deg);
+    }
+}
+@-ms-keyframes turn{
+    /* form{
+        transform: rotateX(0deg) rotateY(45deg);
+    } */
+    to{
+        -webkit-transform:perspective(900px) rotateX(-45deg) rotateY(360deg);
+        transform:perspective(900px) rotateX(-45deg) rotateY(360deg);
+    }
+}
+@-o-keyframes turn{
+    /* form{
+        transform: rotateX(0deg) rotateY(45deg);
+    } */
+    to{
+        -webkit-transform:perspective(900px) rotateX(-45deg) rotateY(360deg);
+        transform:perspective(900px) rotateX(-45deg) rotateY(360deg);
+    }
+}
 @keyframes turn{
     /* form{
         transform: rotateX(0deg) rotateY(45deg);
