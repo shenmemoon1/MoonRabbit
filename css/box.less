@@ -1,0 +1,54 @@
+.box-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .box{
+        // border:1px solid teal;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        transform: perspective(900px) rotateX(-45deg);
+        transform-origin: center center 75px;
+        transform-style: preserve-3d;
+        animation-name: turn;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        li{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: absolute;
+            transform-origin: center center 75px;
+            border: 1px solid #fff;
+            opacity: .4;
+            &:nth-child(1){
+                background-color: skyblue;
+                transform: rotateX(90deg);
+            }
+            &:nth-child(2){
+                background-color: orange;
+                transform: rotateX(180deg);
+            }
+            &:nth-child(3){
+                background-color: slateblue;
+                transform: rotateX(270deg);
+            }
+            &:nth-child(4){
+                background-color: teal;
+                transform: rotateX(360deg);
+            }
+            &:nth-child(5){
+                background-color: slategrey;
+                transform: rotateY(90deg);
+            }
+            &:nth-child(6){
+                background-color: violet;
+                transform: rotateY(-90deg);
+            }
+        }
+    }
+}

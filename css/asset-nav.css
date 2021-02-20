@@ -1,0 +1,21 @@
+.asset-nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid teal;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #dfe6e9;
+}
+.asset-nav .asset-categary {
+  font-size: 1.2rem;
+}
+.asset-nav .asset-categary a {
+  color: #575755;
+}
+.asset-nav .page-link a {
+  color: #575755;
+}
+.asset-nav .page-link a i {
+  margin-left: 0.5rem;
+}

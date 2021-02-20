@@ -1,0 +1,29 @@
+.about-me {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.about-me .bottom-nav {
+  display: flex;
+}
+.about-me .bottom-nav li {
+  padding: 0.5rem 0.8rem;
+}
+.about-me .bottom-nav li a {
+  color: #575757;
+}
+.about-me .logo {
+  width: 2rem;
+  height: 2rem;
+}
+.about-me .logo img {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,57 @@
+body{
+    background-color: #fff;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.col-sm-s-s-1{
+    grid-column: span 1;
+}
+
+.col-sm-s-2{
+    grid-column: span 2;
+}
+
+.col-sm-s-3{
+    grid-column: span 3;
+}
+
+.col-sm-s-4{
+    grid-column: span 4;
+}
+
+.col-sm-s-5{
+    grid-column: span 5;
+}
+
+.col-sm-s-6{
+    grid-column: span 6;
+}
+
+.col-sm-s-7{
+    grid-column: span 7;
+}
+
+.col-sm-s-8{
+    grid-column: span 8;
+}
+
+.col-sm-s-9{
+    grid-column: span 9;
+}
+
+.col-sm-s-10{
+    grid-column: span 10;
+}
+
+.col-sm-s-11{
+    grid-column: span 11;
+}
+
+.col-sm-s-12{
+    grid-column: span 12;
+}

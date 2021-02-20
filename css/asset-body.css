@@ -1,0 +1,22 @@
+.asset-wrapper .asset-title {
+  border-top: 1px solid #ccc;
+}
+.asset-wrapper .asset-title .asset-title {
+  font-size: 4rem;
+}
+.asset-wrapper .author {
+  color: #bbb;
+}
+.asset-wrapper .asset-footer {
+  border-top: 1px solid #ccc;
+}
+.asset-wrapper .asset-footer p {
+  line-height: 1.5rem;
+  width: 95%;
+  padding-top: 2rem;
+}
+@media only-screen and (max-width: 768px) {
+  .asset-wrapper .asset-footer p {
+    padding-top: 0;
+  }
+}

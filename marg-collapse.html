@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonRabbit</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/import.css">
+    <link rel="stylesheet" href="../blog/fontawesome-free-5.15.2-web copy/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar container">
+            <h1 class="logo">
+                <a href="index.html">
+                    <i class="fas fa-feather-alt"></i>
+                    MoonRabbit
+                </a>
+            </h1>
+            <label for="toggle-nav">
+                <i class="fas fa-stream"></i>
+            </label>
+            <input type="checkbox" id="toggle-nav">
+            <div class="collapse">
+                <ul class="nav-opt">
+                    <li><a href="frontlog.html">Frontend log</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="">Learn map</a></li>
+                    <li><a href="library.html">Third part library</a></li>
+                </ul>
+                <div class="form">
+                    <a href="">sign in</a>
+                    <a href="" class="user-sign">sign up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main >
+        <div class="container margin-t-7">
+            <div class="asset-nav">
+                <div class="asset-categary">
+                    <a href="./frontlog.html">
+                        &gt;&gt;log
+                    </a>
+                </div>
+                <div class="page-link">
+                    <a href="#"><i class="fas fa-long-arrow-alt-left"></i></a>
+                    <a href="update.html"><i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container margin-t-3">
+            <div class="asset-wrapper">
+                <h1 class="asset-title padding-t-3">
+                    About solving the problem of margin-top overlap
+                </h1>
+                <div class="author margin-t-2">
+                    <p>Author：Bill Lin</p>
+                </div>
+                <div class="asset-footer margin-t-2 padding-t-3">
+                    <p class="margin-t-1">If the parent element contains a floating element, and the parent element does not set the height and width, 
+                        then its height will collapse to zero, which is the so-called "height collapse".
+                    </p>
+                    <p class="margin-t-1">If the parent element contains a background or border, the overflowing element is not considered part of the parent element.
+                    </p>
+                    <p class="margin-t-1">
+                        Solution 1: Give the parent element a fixed height,But the disadvantage of this method is: not flexible enough to adapt.
+                    </p>
+                    <p class="margin-t-1">
+                        Solution 2: Add attribute overflow: hidden; to the parent element
+                        The advantage is that it is simple. Open the BFC directly. The disadvantage is that 
+                        if a position sub-element exceeds the container, it will be cropped.
+                    </p>
+                    <p class="margin-t-1">
+                        Solution 3: Add an empty div at the end of the child element and set the style below. Advantages: all browsers support, and container overflow will not be clipped;
+                        the disadvantage is that it does not look good.
+                    </p>
+                    <p class="margin-t-1">
+                        Option 4: Perfect pseudo-element clearing floating method.Add before and after pseudo-elements before or after the parent element, content: ‘’, clear: both; display: block.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container margin-t-4">
+            <div class="about-me">
+                <ul class="bottom-nav col-lg-5">
+                    <li><a href="">© 2021 MoonRabbit.</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Docs</a></li>
+                </ul>
+                <div class="logo col-lg-2">
+                    <a href="">
+                        <img src="./img/icon.png" alt="">
+                    </a>
+                </div>
+                <ul class="bottom-nav col-lg-5">
+                    <li><a href="">Team</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

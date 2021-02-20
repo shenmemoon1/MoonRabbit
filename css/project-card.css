@@ -1,0 +1,43 @@
+.outer-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: auto;
+  justify-content: center;
+}
+.outer-wrapper .inner-wrapper {
+  flex: none;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-right: 2rem;
+}
+.outer-wrapper .inner-wrapper .project-img img {
+  width: 100%;
+  vertical-align: top;
+}
+.outer-wrapper .inner-wrapper .project-info {
+  padding: 0 1rem;
+  line-height: 1.2rem;
+  color: #676766;
+}
+.outer-wrapper .inner-wrapper .project-access {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #ccc;
+}
+.outer-wrapper .inner-wrapper .project-access .btn-1 a {
+  font-size: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .outer-wrapper {
+    flex-direction: column;
+    align-content: center;
+  }
+  .outer-wrapper .inner-wrapper {
+    width: 90%;
+    margin-right: 0;
+  }
+}

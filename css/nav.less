@@ -1,0 +1,105 @@
+header{
+    background-color: #24292E;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .3);
+    .nav-bar{
+        display: flex;
+        // height: 50px;
+        align-items: center;
+        padding: .3rem 0;
+        .logo{
+            margin-right: 1rem;
+            a{
+                display: flex;
+                height: 50px;
+                align-items: center;
+                font-size: 1.3rem;
+                i{
+                    margin-right: .5rem;
+                }
+            }
+            &+label{
+                display: none;
+                &+input{
+                    display: none;
+                }
+            }
+        }
+        
+        .collapse{
+            display: flex;
+            flex-grow: 1;
+            .nav-opt{
+                display: flex;
+                margin-right: auto;
+                li>a{
+                    display: flex;
+                    height: 50px;
+                    align-items: center;
+                    margin: 0 10px;
+                    &:hover{
+                        color: #ccc;
+                        // font-weight: bold;
+                    }
+                }
+            }
+            .form{
+                display: flex;
+                align-items: center;
+                a{
+                    padding: 7px 16px;
+                    border: 1px solid #fff;
+                    margin-right: 1rem;
+                    border-radius: .3rem;
+                    &:nth-child(1){
+                        border: none;
+                    }
+                    &:hover{
+                        color: #ccc;
+                        // font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:960px){
+    header{
+        .nav-bar{
+            flex-flow: row wrap;
+            padding: .5rem 1rem;
+            .logo{
+                margin-right: auto;
+                &+label{
+                    color: #fff;
+                    border: 1px solid #fff;
+                    padding: 1rem;
+                    display: block;
+                    &:hover{
+                        color: #ccc;
+                        border: 1px solid #ccc;
+                    }
+                    &+input:checked{
+                        &+.collapse{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .collapse{
+                display: none;
+                width: 100%;
+                flex-flow: column;
+                .nav-opt{
+                    flex-flow: column;
+                    width: 100%;
+                }
+                .form{
+                    margin: .8rem 0;
+                }
+            }
+        }
+    }
+
+}

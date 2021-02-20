@@ -1,0 +1,36 @@
+.btn {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #575755;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn a {
+  display: block;
+  color: #575755;
+  font-size: 2rem;
+  border: 1px solid #575755;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.btn a:hover {
+  color: #2f3640;
+}
+.btn a i {
+  color: teal;
+  margin-right: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .btn {
+    font-size: 1.2rem;
+  }
+  .btn a {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}

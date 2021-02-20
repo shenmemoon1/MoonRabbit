@@ -1,0 +1,19 @@
+.list-group li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.list-group li:hover {
+  background-color: #575757;
+}
+.list-group li:hover a {
+  color: #fff;
+}
+.list-group li:last-child {
+  border-bottom: none;
+}
+.list-group li a {
+  color: #2d3436;
+  font-size: 1rem;
+}

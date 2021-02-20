@@ -1,0 +1,21 @@
+.page-list{
+    // display: flex; //这个flex可以是的list连接起来
+    a{
+        // display: flex;
+        color: #575757;
+        padding: .3rem .8rem;
+        border: 1px solid #575757;
+        &:first-child{
+            border-top-left-radius: .3rem;
+            border-bottom-left-radius: .3rem;
+        }
+        &:last-child{
+            border-top-right-radius: .3rem;
+            border-bottom-right-radius: .3rem;
+        }
+        &.current{
+            background-color: #575755;
+            color: #fff;
+        }
+    }
+}
