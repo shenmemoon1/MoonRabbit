@@ -10,12 +10,19 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  -webkit-transform: perspective(900px) rotateX(-45deg);
   transform: perspective(900px) rotateX(-45deg);
+  -webkit-transform-origin: center center 75px;
   transform-origin: center center 75px;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-animation-name: turn;
   animation-name: turn;
+  -webkit-animation-duration: 6s;
   animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
   animation-direction: reverse;
 }
 .box-wrapper .box li {
@@ -23,31 +30,38 @@
   height: 150px;
   background-color: red;
   position: absolute;
+  -webkit-transform-origin: center center 75px;
   transform-origin: center center 75px;
   border: 1px solid #fff;
   opacity: 0.4;
 }
 .box-wrapper .box li:nth-child(1) {
   background-color: skyblue;
+  -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
 }
 .box-wrapper .box li:nth-child(2) {
   background-color: orange;
+  -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
 .box-wrapper .box li:nth-child(3) {
   background-color: slateblue;
+  -webkit-transform: rotateX(270deg);
   transform: rotateX(270deg);
 }
 .box-wrapper .box li:nth-child(4) {
   background-color: teal;
+  -webkit-transform: rotateX(360deg);
   transform: rotateX(360deg);
 }
 .box-wrapper .box li:nth-child(5) {
   background-color: slategrey;
+  -webkit-transform: rotateY(90deg);
   transform: rotateY(90deg);
 }
 .box-wrapper .box li:nth-child(6) {
   background-color: violet;
+  -webkit-transform: rotateY(-90deg);
   transform: rotateY(-90deg);
 }
