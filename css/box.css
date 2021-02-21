@@ -5,8 +5,8 @@
   align-items: center;
 }
 .box-wrapper .box {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
